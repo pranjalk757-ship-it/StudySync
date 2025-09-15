@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Study Sync - Pricing</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f8ff;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #ff5722;
+            color: white;
+            padding: 15px 20px;
+        }
+        header img {
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+        header img:hover {
+            transform: scale(1.1);
+        }
+        .nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .nav a:hover {
+            color: #ffd700;
+        }
+        .contact_button a {
+            background: #ffd700;
+            color: #ff5722;
+            padding: 8px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .contact_button a:hover {
+            background: #ffc107;
+        }
+        main {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        main h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: #ff5722;
+        }
+        main p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            color: #555;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+        .pricing-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+        .pricing-card h3 {
+            color: #ff5722;
+            margin-bottom: 15px;
+        }
+        .pricing-card .price {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .pricing-card ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        .pricing-card ul li {
+            margin: 10px 0;
+            color: #555;
+        }
+        .pricing-card a {
+            text-decoration: none;
+            background: #ff5722;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .pricing-card a:hover {
+            background: #e64a19;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1f1f1;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            main h1 {
+                font-size: 2rem;
+            }
+            main p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav">
+                
+            </nav>
+            
+        </header>
+
+        <main>
+            <h1>Our Pricing Plans</h1>
+            <p>Choose the plan that best fits your learning journey. Simple, affordable, and transparent pricing!</p>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <div class="price">$9.99 / month</div>
+                    <ul>
+                        <li>Access to core tutorials</li>
+                        <li>Track progress</li>
+                        <li>Community forum</li>
+                    </ul>
+                    <a href="#signup">Choose Plan</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Standard</h3>
+                    <div class="price">$19.99 / month</div>
+                    <ul>
+                        <li>Everything in Basic</li>
+                        <li>Interactive quizzes</li>
+                        <li>Personalized suggestions</li>
+                    </ul>
+                    <a href="#signup">Choose Plan</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Premium</h3>
+                    <div class="price">$29.99 / month</div>
+                    <ul>
+                        <li>Everything in Standard</li>
+                        <li>Expert mentoring</li>
+                        <li>Advanced analytics</li>
+                    </ul>
+                    <a href="#signup">Choose Plan</a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            © 2025 StudySync. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

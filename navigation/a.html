@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Study Sync - About</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #9c27b0;
+            color: white;
+            padding: 15px 20px;
+        }
+        header img {
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+        header img:hover {
+            transform: scale(1.1);
+        }
+        .nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .nav a:hover {
+            color: #ffeb3b;
+        }
+        .contact_button a {
+            background: #ffeb3b;
+            color: #9c27b0;
+            padding: 8px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .contact_button a:hover {
+            background: #fdd835;
+        }
+        main {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        main h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: #9c27b0;
+        }
+        main p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            color: #555;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+        .team-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+        .team-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .team-card-content {
+            padding: 15px;
+        }
+        .team-card-content h3 {
+            margin: 10px 0;
+            color: #9c27b0;
+        }
+        .team-card-content p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1f1f1;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            main h1 {
+                font-size: 2rem;
+            }
+            main p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav">
+                
+            </nav>
+            
+        </header>
+
+        <main>
+            <h1>About StudySync</h1>
+            <p>At StudySync, we believe learning should be accessible, engaging, and empowering. Our mission is to provide students and educators with tools and resources that make learning smarter and more enjoyable. Together, we aim to build a community that thrives on curiosity, creativity, and continuous growth.</p>
+
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-card-content">
+                        <h3>Sarah Johnson</h3>
+                        <p>Lead Educator – Passionate about innovative teaching methods and interactive learning tools.</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-content">
+                        <h3>Mark Lee</h3>
+                        <p>Product Designer – Focused on creating intuitive, beautiful interfaces for learners everywhere.</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-content">
+                        <h3>Priya Sharma</h3>
+                        <p>Content Strategist – Crafting engaging educational content to enhance student success.</p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-card-content">
+                        <h3>David Kim</h3>
+                        <p>Technical Lead – Ensuring seamless performance and innovation at the heart of our platform.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            © 2025 StudySync. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Study Sync - Blog</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff8e1;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #3f51b5;
+            color: white;
+            padding: 15px 20px;
+        }
+        header img {
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+        header img:hover {
+            transform: scale(1.1);
+        }
+        .nav a {
+            color: white;
+            margin: 0 12px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        .nav a:hover {
+            color: #ffeb3b;
+        }
+        .contact_button a {
+            background: #ffeb3b;
+            color: #3f51b5;
+            padding: 8px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+        .contact_button a:hover {
+            background: #fdd835;
+        }
+        main {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        main h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: #3f51b5;
+        }
+        main p {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            color: #555;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+        .blog-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
+        .blog-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        .blog-card-content {
+            padding: 15px;
+            text-align: left;
+        }
+        .blog-card-content h3 {
+            margin: 0 0 10px 0;
+            color: #3f51b5;
+        }
+        .blog-card-content p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+        .blog-card-content a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #3f51b5;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .blog-card-content a:hover {
+            color: #303f9f;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f1f1f1;
+            color: #555;
+        }
+        @media (max-width: 768px) {
+            main h1 {
+                font-size: 2rem;
+            }
+            main p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="nav">
+               
+            </nav>
+            
+        </header>
+
+        <main>
+            <h1>Our Blog</h1>
+            <p>Stay informed with expert articles, tips, and guides designed to enhance your learning experience.</p>
+
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-card-content">
+                        <h3>Top 10 Study Techniques</h3>
+                        <p>Discover proven strategies to enhance concentration, memory, and productivity while studying.</p>
+                        <a href="#readmore">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-card-content">
+                        <h3>Time Management Tips</h3>
+                        <p>Learn how to structure your day effectively to balance study, work, and personal life seamlessly.</p>
+                        <a href="#readmore">Read More</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-card-content">
+                        <h3>Interactive Learning Tools</h3>
+                        <p>Explore tools and resources that make learning more engaging, interactive, and fun for students of all ages.</p>
+                        <a href="#readmore">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            © 2025 StudySync. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
